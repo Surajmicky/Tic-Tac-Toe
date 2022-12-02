@@ -12,8 +12,9 @@ body{
   align-items:center;
   justify-content:center;
   width:30em;
-  height:30em;
+  height:26em;
   /* border:10px solid ; */
   background-color:#00005C;
+  padding-bottom:2em;
   border-radius:2em;
 }

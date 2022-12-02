@@ -50,9 +50,12 @@ const Board = () => {
         checkwinner(); 
     },[data])
   return (
+    <>
+    <div style={{color:'white',fontSize:'2em',textAlign:'center',marginBottom:'1em'}}>TIC TAC TOE</div>
     <BoardStyle>
     {data.map((el,index)=><button key={index} onClick={(event)=>handleClick(count,index)} className="box">{el==='X'?<img src={X} alt='x'/>:el==='O'?<img src={O} alt='o'/>:null}</button>)}
     </BoardStyle>
+    </>
   )
 }
 const BoardStyle= styled.div`
