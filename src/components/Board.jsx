@@ -25,14 +25,24 @@ const Board = () => {
        
     }
     const checkwinner=()=>{
-        
+       
           if((data[0]==='X'&& data[1]==='X'&& data[2]==='X')||(data[3]==='X'&& data[4]==='X'&& data[5]==='X')||(data[6]==='X'&& data[7]==='X'&& data[8]==='X') ||(data[0]==='X'&& data[4]==='X'&& data[8]==='X')||(data[2]==='X'&& data[4]==='X'&& data[6]==='X')||(data[0]==='X'&& data[3]==='X'&& data[6]==='X')||(data[1]==='X'&& data[4]==='X'&& data[7]==='X')||(data[2]==='X'&& data[5]==='X'&& data[8]==='X')){
             alert('X is winner')
-            setData(initialState)
+            setData(initialState);
+            return;
           }else if((data[0]==='O'&& data[1]==='O'&& data[2]==='O')||(data[3]==='O'&& data[4]==='O'&& data[5]==='O')||(data[6]==='O'&& data[7]==='O'&& data[8]==='O') ||(data[0]==='O'&& data[4]==='O'&& data[8]==='O')||(data[2]==='O'&& data[4]==='O'&& data[6]==='O')||(data[0]==='O'&& data[3]==='O'&& data[6]==='O')||(data[1]==='O'&& data[4]==='O'&& data[7]==='O')||(data[2]==='O'&& data[5]==='O'&& data[8]==='O')){
             alert('O is winner');
-            setData(initialState)
+            setData(initialState);
+            return;
           }
+         
+         if(!data.includes(null)){
+          alert('No Winner');
+          setData(initialState);
+          return;
+         }
+
+
          
         
     }
